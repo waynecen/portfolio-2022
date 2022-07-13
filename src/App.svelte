@@ -1,5 +1,6 @@
 <script>
 	import Cursor from "./Cursor.svelte";
+	import ThemeToggle from "./components/ThemeToggle.svelte";
 </script>
 
 <Cursor />
@@ -7,11 +8,21 @@
 	<section class="container--about">
 		<h1 class="header">Hey, I'm Wayne,</h1>
 		<p class="intro-description">Desc</p>
-		<button class="btn--toggle">Toggle Dark-mode</button>
+		<ThemeToggle>O</ThemeToggle>
 	</section>
 </main>
 
 <style>
+	:global(body) {
+		background-color: var(--bg-darkmode);
+		color: var(--text-darkmode);
+		transition: background-color 0.3s;
+	}
+	:global(body.dark-mode) {
+		background-color: var(--bg-lightmode);
+		color: var(--text-lightmode);
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
@@ -21,14 +32,9 @@
 		align-items: center;
 	}
 
-	.container--about {
-		width: 960px;
-	}
-
 	.header {
 		font-size: 1.6rem;
 		font-weight: 500;
-		color: #e9e9e9;
 		margin-bottom: 8px;
 	}
 
@@ -37,10 +43,5 @@
 		font-weight: 300;
 		max-width: 520px;
 		line-height: 1.4rem;
-	}
-
-	.btn--toggle {
-		width: 120px;
-		height: 44px;
 	}
 </style>
