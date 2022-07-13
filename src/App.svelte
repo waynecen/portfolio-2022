@@ -6,15 +6,17 @@
 <Cursor />
 <main>
 	<nav>
-		<a class="logo" href="/">WAYNE</a>
+		<a href="/"><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon"></a>
 		<ThemeToggle />
 	</nav>
 	<section class="about">
 		<h1 class="header">Hey, I'm Wayne</h1>
 		<p class="description">
-			I'm a software developer and designer — specializing in building and designing accessible, fun, and <span class="magic">eye-catching</span> things for the web. 
+			I'm a software developer and designer — specializing in designing and building accessible, fun, and <span class="magic">eye-catching</span> things for the web. 
 		</p>
-		<a href="/" class="shift-right">Resume <span>-></span></a>
+		<div class="shift-right">
+			<a class="resume" href="/" target="_blank">Resume --></a>
+		</div>
 	</section>
 </main>
 
@@ -46,9 +48,14 @@
 
 	.logo {
 		display: flex;
-		color: var(--bg-lightmode);
-		text-decoration: none;
+		width: 24px;
+		height: 24px;
 		align-self: left;
+		transition: transform 0.225s ease-in-out;
+	}
+
+	.logo:hover {
+		transform: scale(1.15) rotate3d(1, 1, 1, 360deg);
 	}
 
 	/* About */
@@ -112,7 +119,17 @@
 	}
 
 	/* resume arrow */
+	.resume {
+		width: fit-content;
+		block-size: fit-content;
+	}
+
+	.shift-right {
+		width: fit-content;
+		transition: transform 0.225s ease-out;
+	}
+
 	.shift-right:hover {
-		transform: translateX(2px);
+		transform: translate(4px);
 	}
 </style>
