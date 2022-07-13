@@ -14,15 +14,16 @@
 	--secondary: "Woodland";
 
 	/* colors */
-	--gradient1: #b4ffc0;
-	--gradient2: #e45bd8;
-	--gradient3: #77daf3;
+	--gradient1: #faffd0;
+	--gradient2: #ff86f5;
+	--gradient3: #adefff;
 	--border: rgb(70, 77, 83);
 	--icon-default: #a0a0a0;
 	--bg-darkmode: #0b0b0b;
 	--bg-lightmode: #fafafa;
 	--text-darkmode: rgb(246, 246, 246);
 	--text-lightmode: rgb(24, 24, 24);
+	--text-highlight: #f1c40f;
 
 	--github: #fafafa;
 	--instagram: #c13584;
@@ -64,4 +65,17 @@ body {
 h1,
 p {
 	color: var(--text-color);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	transition: all 0.2s ease-out;
+}
+
+a:visited {
+}
+
+a:hover {
+	opacity: 0.7;
 }

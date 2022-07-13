@@ -1,11 +1,11 @@
 <script>
-	const links = document.querySelectorAll('.links li a');
+	const links = document.querySelectorAll(".links li a");
 	links.forEach((link) => {
-		link.addEventListener('mouseleave', () => {
-			mouseCursor.classList.remove('link-hover');
+		link.addEventListener("mouseleave", () => {
+			mouseCursor.classList.remove("link-hover");
 		});
-		link.addEventListener('mouseenter', () => {
-			mouseCursor.classList.add('link-hover');
+		link.addEventListener("mouseenter", () => {
+			mouseCursor.classList.add("link-hover");
 		});
 	});
 
@@ -16,8 +16,8 @@
 	function handleMousemove(event) {
 		m.x = event.clientX;
 		m.y = event.clientY;
-		mouseCursor.style.left = m.x + 'px';
-		mouseCursor.style.top = m.y + 'px';
+		mouseCursor.style.left = m.x + "px";
+		mouseCursor.style.top = m.y + "px";
 	}
 
 	function handleMousedown() {
@@ -49,6 +49,7 @@
 		pointer-events: none;
 		transition: all 0.125s ease-in;
 		transition-property: background, transform;
+		z-index: 2;
 	}
 
 	.active-click {
