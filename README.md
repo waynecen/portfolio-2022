@@ -7,7 +7,7 @@
 ### 3d interactive playground
 ###### [screenshots/code samples here]
 
-## :construction: Upcoming Implementation
+## :construction: To-do/Bug fixing
 
 - [ ] Add link to PDF Resume
 - [ ] Implement something with ThreeJS
@@ -17,3 +17,4 @@
 - [ ] Error handling
 - [ ] Add icon links for project cards (link to new tab/to repository)
 - [ ] Fix darkmode styling
+- [ ] Expand cursor on element hover
