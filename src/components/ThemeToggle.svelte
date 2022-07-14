@@ -16,7 +16,6 @@
 		width: 16px;
 		height: 16px;
 		cursor: none;
-		margin-right: 10%;
 	}
 
 	:global(body.dark-mode) .btn-toggle {

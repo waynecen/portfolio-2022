@@ -1,21 +1,39 @@
 <script>
 	import Cursor from "./Cursor.svelte";
 	import ThemeToggle from "./components/ThemeToggle.svelte";
+	import Divider from "./components/Divider.svelte";
+	import Project from "./components/Project.svelte";
 </script>
 
 <Cursor />
 <main>
 	<nav>
-		<a href="/"><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon"></a>
-		<ThemeToggle />
+		<a href="/"
+			><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon" /></a
+		>
+		<div class="wrapper">
+			<a href="https://github.com/waynecen" target="_blank">GitHub</a>
+			<a href="https://linkedin.com/in/waynecen" target="_blank">LinkedIn</a>
+			<a href="https://linkedin.com/in/waynecen" target="_blank">Twitter</a>
+			<a href="https://linkedin.com/in/waynecen" target="_blank">Instagram</a>
+			<ThemeToggle />
+		</div>
 	</nav>
-	<section class="about">
+	<section>
 		<h1 class="header">Hey, I'm Wayne</h1>
 		<p class="description">
-			I'm a software developer and designer — specializing in designing and building accessible, fun, and <span class="magic">eye-catching</span> things for the web. 
+			I'm a software developer and designer — specializing in designing and
+			building accessible, fun, and <span class="magic">eye-catching</span> things for
+			the web.
 		</p>
 		<div class="shift-right">
 			<a class="resume" href="/" target="_blank">Resume --></a>
+		</div>
+		<Divider />
+		<div class="wrapper--projects">
+			<Project name="Tenzi">Fast and fun game of dice</Project>
+			<Project name="The Weather">Weather app</Project>
+			<Project name="Quizzical">Trivia Game</Project>
 		</div>
 	</section>
 </main>
@@ -58,6 +76,17 @@
 		transform: scale(1.15) rotate3d(1, 1, 1, 360deg);
 	}
 
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-self: flex-end;
+		margin-right: 10%;
+	}
+
+	.wrapper a {
+		margin-right: 16px;
+	}
+
 	/* About */
 	main {
 		display: flex;
@@ -69,10 +98,7 @@
 	section {
 		margin-top: 10vmin;
 		margin-left: 10%;
-	}
-
-	.about {
-		/* width: 960px; */
+		margin-right: 10%;
 	}
 
 	.header {
@@ -102,7 +128,7 @@
 	}
 
 	p > .magic {
-		animation: background-pan 3s linear infinite;
+		animation: background-pan 5s linear infinite;
 		background: linear-gradient(
 			to right,
 			var(--gradient1),
@@ -116,20 +142,28 @@
 		white-space: nowrap;
 		font-weight: 600;
 		font-size: 1rem;
+		filter: brightness(100%);
 	}
 
-	/* resume arrow */
-	.resume {
-		width: fit-content;
-		block-size: fit-content;
-	}
-
+	/* Resume link */
 	.shift-right {
 		width: fit-content;
-		transition: transform 0.225s ease-out;
+		transition: all 0.225s ease-out;
 	}
 
 	.shift-right:hover {
 		transform: translate(4px);
+		opacity: 0.7;
+	}
+
+	/* Projects */
+	.wrapper--projects {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 32px;
+	}
+
+	.wrapper--projects {
 	}
 </style>
