@@ -2,13 +2,7 @@
 
 ###### <div align="center">Personal portfolio of Wayne Cen, built with [Svelte](https://svelte.dev/), [ThreeJS](https://threejs.org/), [Vite](https://vitejs.dev/), and hosted with [Vercel](https://vercel.com/)</div>
 
-###### [preview screenshot here]
-
-### 3d interactive playground
-###### [screenshots/code samples here]
-
 ## :construction: To-do/Bug fixing
-
 - [ ] Add link to PDF Resume
 - [ ] Make mobile responsive
 - [ ] Implement something with ThreeJS
