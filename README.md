@@ -10,6 +10,7 @@
 ## :construction: To-do/Bug fixing
 
 - [ ] Add link to PDF Resume
+- [ ] Make mobile responsive
 - [ ] Implement something with ThreeJS
 - [ ] Tooltips for Social Links
 - [ ] Theme based on time of day
@@ -18,3 +19,4 @@
 - [ ] Add icon links for project cards (link to new tab/to repository)
 - [ ] Fix darkmode styling
 - [ ] Expand cursor on element hover
+- [ ] Update darkmode toggle to SVG
