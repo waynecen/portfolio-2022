@@ -1,5 +1,5 @@
 <script>
-	const links = document.querySelectorAll(".links li a");
+	const links = document.querySelectorAll("a");
 	links.forEach((link) => {
 		link.addEventListener("mouseleave", () => {
 			mouseCursor.classList.remove("link-hover");
@@ -36,7 +36,7 @@
 
 <div bind:this={mouseCursor} class="innerdot" class:active-click={clicked} />
 
-<style lang="scss">
+<style>
 	.innerdot {
 		opacity: 1;
 		width: 16px;

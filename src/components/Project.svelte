@@ -80,7 +80,7 @@
 		background-position: 0% 0%;
 		background-size: 3vmin 3vmin;
 		height: calc(100% - 6vmin);
-		padding: 3vmin;
+		padding: 2vmin;
 		position: relative;
 		transition: background-position 350ms ease;
 		width: calc(100% - 6vmin);

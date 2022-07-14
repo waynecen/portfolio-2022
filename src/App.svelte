@@ -12,20 +12,26 @@
 			><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon" /></a
 		>
 		<div class="wrapper">
-			<a class="socials" href="https://github.com/waynecen" target="_blank"
-				>GitHub</a
+			<a class="socials" href="https://medium.com/@wayne.cen" target="_blank"
+				>Medium</a
 			>
 			<a class="socials" href="https://linkedin.com/in/waynecen" target="_blank"
 				>LinkedIn</a
 			>
-			<a class="socials" href="https://linkedin.com/in/waynecen" target="_blank"
-				>Instagram</a
+			<a class="socials" href="https://github.com/waynecen" target="_blank"
+				>GitHub</a
 			>
 			<ThemeToggle />
 		</div>
 	</nav>
-	<section>
-		<h1 class="header">Hey, I'm Wayne</h1>
+	<section class="about">
+		<h1 class="header">
+			Hey, I'm Wayne <img
+				src="./src/assets/hand-wave-emoji.png"
+				class="emoji--handwave"
+				alt="Hand wave emoji"
+			/>
+		</h1>
 		<p class="description">
 			I'm a software developer and designer — specializing in designing and
 			building accessible, fun, and <span class="magic">eye-catching</span> things for
@@ -34,16 +40,28 @@
 		<div class="shift-right">
 			<a class="resume" href="/" target="_blank">Resume --></a>
 		</div>
-		<Divider />
-		<div class="wrapper--projects">
-			<Project name="The Weather" link="https://the-weather-six.vercel.app/"
-				>Weather app</Project
-			>
-			<Project name="Tenzi" link="https://tenzi-game.vercel.app/"
-				>Dice Game</Project
-			>
-			<Project name="Quizzical" link="https://quizzical-ten.vercel.app/">Trivia Game</Project>
-		</div>
+	</section>
+	<Divider />
+	<section class="projects">
+		<Project name="The Weather" link="https://the-weather-six.vercel.app/"
+			>Search the weekly weather forecast for any location</Project
+		>
+		<Project name="Tenzi" link="https://tenzi-game.vercel.app/"
+			>Fun game of rolling dice quickly until you hold ten dice of equal value</Project
+		>
+		<Project name="Quizzical" link="https://quizzical-ten.vercel.app/"
+			>Multiple choice trivia game</Project
+		>
+	</section>
+	<Divider />
+	<section>
+		<footer>
+			<p class="contact">
+				If you'd like to chat, feel free to send me an email at <span class="email">
+					<a href="mailto:wayne.cen@gmail.com"> wayne.cen@gmail.com </a>
+				</span>
+			</p>
+		</footer>
 	</section>
 </main>
 
@@ -101,15 +119,18 @@
 	}
 
 	/* About */
+	.about {
+		margin-top: 10vmin;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
 		font-family: var(--primary);
-		height: 200vmin;
+		height: 100vmin;
 	}
 
 	section {
-		margin-top: 10vmin;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -169,13 +190,48 @@
 	}
 
 	/* Projects */
-	.wrapper--projects {
+	.projects {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding-top: 32px;
 	}
 
-	.wrapper--projects {
+	/* Footer */
+	footer {
+		font-size: 0.9rem;
+		font-weight: 400;
+	}
+
+	.contact {
+		color: #a7a7a7;
+	}
+
+	.email {
+		font-weight: 600;
+		transition: opacity 0.225s ease-out;
+	}
+
+	.email:hover {
+		opacity: 0.8;
+	}
+
+	@keyframes handwave {
+		from {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(45deg);
+		}
+		to {
+			transform: rotate(0deg);
+		}
+	}
+	.emoji--handwave {
+		width: 24px;
+		transition: transform 0.3s ease-out;
+	}
+
+	.emoji--handwave:hover {
+		animation: handwave 0.4s linear infinite;
 	}
 </style>
