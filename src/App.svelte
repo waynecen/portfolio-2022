@@ -8,7 +8,7 @@
 <Cursor />
 <main>
 	<nav>
-		<a href="/"><img src="/img/favicon.ico" class="logo" alt="Logo icon" /></a>
+		<a href="/"><img src="img/favicon.ico" class="logo" alt="Logo icon" /></a>
 		<div class="wrapper">
 			<a class="socials" href="https://medium.com/@wayne.cen" target="_blank"
 				><img src="img/icon-medium.png" width="24px" alt="icon for Medium" /></a
