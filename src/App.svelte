@@ -43,7 +43,11 @@
 			the web.
 		</p>
 		<div class="shift-right">
-			<a class="resume" href="/" target="_blank">Resume --></a>
+			<a
+				class="resume"
+				href="https://drive.google.com/file/d/1Xcp28qiHAozYg7DSoIP8xLjTqj0Zzo-E/view?usp=sharing"
+				target="_blank">Resume --></a
+			>
 		</div>
 	</section>
 	<Divider />
