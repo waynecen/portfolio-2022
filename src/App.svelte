@@ -8,33 +8,23 @@
 <Cursor />
 <main>
 	<nav>
-		<a href="/"
-			><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon" /></a
-		>
+		<a href="/"><img src="/img/favicon.ico" class="logo" alt="Logo icon" /></a>
 		<div class="wrapper">
 			<a class="socials" href="https://medium.com/@wayne.cen" target="_blank"
-				><img
-					src="./src/assets/icon-medium.png"
-					width="24px"
-					alt="icon for Medium"
-				/></a
+				><img src="/img/icon-medium.png" width="24px" alt="icon for Medium" /></a
 			>
 			<a
 				class="socials"
 				href="https://www.linkedin.com/in/waynercen/"
 				target="_blank"
 				><img
-					src="./src/assets/icon-linkedin.png"
+					src="/img/icon-linkedin.png"
 					width="20px"
 					alt="icon for LinkedIn"
 				/></a
 			>
 			<a class="socials" href="https://github.com/waynecen" target="_blank"
-				><img
-					src="./src/assets/icon-github.png"
-					width="20px"
-					alt="icon for GitHub"
-				/></a
+				><img src="/img/icon-github.png" width="20px" alt="icon for GitHub" /></a
 			>
 			<ThemeToggle />
 		</div>
@@ -42,7 +32,7 @@
 	<section class="about">
 		<h1 class="header">
 			Hey, I'm Wayne <img
-				src="./src/assets/hand-wave-emoji.png"
+				src="/img/hand-wave-emoji.png"
 				class="emoji--handwave"
 				alt="Hand wave emoji"
 			/>
