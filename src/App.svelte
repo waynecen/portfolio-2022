@@ -13,13 +13,28 @@
 		>
 		<div class="wrapper">
 			<a class="socials" href="https://medium.com/@wayne.cen" target="_blank"
-				>Medium</a
+				><img
+					src="./src/assets/icon-medium.png"
+					width="24px"
+					alt="icon for Medium"
+				/></a
 			>
-			<a class="socials" href="https://linkedin.com/in/waynecen" target="_blank"
-				>LinkedIn</a
+			<a
+				class="socials"
+				href="https://www.linkedin.com/in/waynercen/"
+				target="_blank"
+				><img
+					src="./src/assets/icon-linkedin.png"
+					width="20px"
+					alt="icon for LinkedIn"
+				/></a
 			>
 			<a class="socials" href="https://github.com/waynecen" target="_blank"
-				>GitHub</a
+				><img
+					src="./src/assets/icon-github.png"
+					width="20px"
+					alt="icon for GitHub"
+				/></a
 			>
 			<ThemeToggle />
 		</div>
@@ -42,15 +57,21 @@
 		</div>
 	</section>
 	<Divider />
+	<h2 class="header--projects">Selected Work</h2>
 	<section class="projects">
-		<Project name="The Weather" link="https://the-weather-six.vercel.app/"
-			>Search the weekly weather forecast for any location</Project
-		>
 		<Project name="Tenzi" link="https://tenzi-game.vercel.app/"
-			>Fun game of rolling dice quickly until you hold ten dice of equal value</Project
+			><p slot="description">
+				A game of rolling dice quickly until you hold ten dice of equal value
+			</p>
+			<p>Built with React</p></Project
 		>
+		<Project name="The Weather" link="https://the-weather-six.vercel.app/"
+			><p slot="description">
+				Search the weekly weather forecast for any location
+			</p>
+		</Project>
 		<Project name="Quizzical" link="https://quizzical-ten.vercel.app/"
-			>Multiple choice trivia game</Project
+			><p slot="description">Multiple choice trivia game</p></Project
 		>
 	</section>
 	<Divider />
@@ -93,8 +114,8 @@
 
 	.logo {
 		display: flex;
-		width: 24px;
-		height: 24px;
+		width: 20px;
+		height: 20px;
 		align-self: left;
 		transition: transform 0.225s ease-in-out;
 	}
@@ -114,8 +135,12 @@
 		margin-right: 16px;
 	}
 
+	.socials {
+		opacity: 0.5;
+	}
+
 	.socials:hover {
-		opacity: 0.8;
+		opacity: 1;
 	}
 
 	/* About */
@@ -127,7 +152,6 @@
 		display: flex;
 		flex-direction: column;
 		font-family: var(--primary);
-		height: 100vmin;
 	}
 
 	section {
@@ -174,7 +198,7 @@
 		-webkit-text-fill-color: transparent;
 		background-size: 200%;
 		white-space: nowrap;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 1rem;
 	}
 
@@ -190,6 +214,14 @@
 	}
 
 	/* Projects */
+	.header--projects {
+		margin-left: 10%;
+		margin-bottom: 16px;
+		color: rgba(255, 255, 255, 0.4);
+		font-weight: 600;
+		font-size: 1rem;
+	}
+
 	.projects {
 		display: flex;
 		flex-direction: row;

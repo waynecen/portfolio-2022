@@ -23,7 +23,8 @@
 	<a href={link} target="_blank">
 		<div class="card-content">
 			<h3 class="card-title">{name}</h3>
-			<h4 class="card-subtitle"><slot /></h4>
+			<h4 class="card-subtitle"><slot name="description" /></h4>
+			<slot name="tech-stack" />
 		</div>
 	</a>
 </div>
@@ -79,11 +80,11 @@
 		);
 		background-position: 0% 0%;
 		background-size: 3vmin 3vmin;
-		height: calc(100% - 6vmin);
+		height: calc(100% - 4vmin);
 		padding: 2vmin;
 		position: relative;
 		transition: background-position 350ms ease;
-		width: calc(100% - 6vmin);
+		width: calc(100% - 5vmin);
 	}
 
 	.card-title,
@@ -103,6 +104,7 @@
 		font-size: 0.9rem;
 		font-weight: 400;
 		margin-top: 1vmin;
+		margin-bottom: 0vmin;
 	}
 
 	.card-subtitle-word {
