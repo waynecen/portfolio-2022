@@ -10,7 +10,10 @@
 ## :construction: Upcoming Implementation
 
 - [ ] Add link to PDF Resume
+- [ ] Implement something with ThreeJS
 - [ ] Tooltips for Social Links
 - [ ] Theme based on time of day
-- [ ] 3D implementation
-- [ ] Create a Resume page
+- [ ] Create a dedicated resume page
+- [ ] Error handling
+- [ ] Add icon links for project cards (link to new tab/to repository)
+- [ ] Fix darkmode styling
