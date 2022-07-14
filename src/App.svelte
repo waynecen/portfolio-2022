@@ -12,10 +12,15 @@
 			><img src="./src/assets/favicon.ico" class="logo" alt="Logo icon" /></a
 		>
 		<div class="wrapper">
-			<a href="https://github.com/waynecen" target="_blank">GitHub</a>
-			<a href="https://linkedin.com/in/waynecen" target="_blank">LinkedIn</a>
-			<a href="https://linkedin.com/in/waynecen" target="_blank">Twitter</a>
-			<a href="https://linkedin.com/in/waynecen" target="_blank">Instagram</a>
+			<a class="socials" href="https://github.com/waynecen" target="_blank"
+				>GitHub</a
+			>
+			<a class="socials" href="https://linkedin.com/in/waynecen" target="_blank"
+				>LinkedIn</a
+			>
+			<a class="socials" href="https://linkedin.com/in/waynecen" target="_blank"
+				>Instagram</a
+			>
 			<ThemeToggle />
 		</div>
 	</nav>
@@ -31,9 +36,13 @@
 		</div>
 		<Divider />
 		<div class="wrapper--projects">
-			<Project name="Tenzi">Fast and fun game of dice</Project>
-			<Project name="The Weather">Weather app</Project>
-			<Project name="Quizzical">Trivia Game</Project>
+			<Project name="The Weather" link="https://the-weather-six.vercel.app/"
+				>Weather app</Project
+			>
+			<Project name="Tenzi" link="https://tenzi-game.vercel.app/"
+				>Dice Game</Project
+			>
+			<Project name="Quizzical" link="https://quizzical-ten.vercel.app/">Trivia Game</Project>
 		</div>
 	</section>
 </main>
@@ -60,7 +69,7 @@
 		font-size: 0.9rem;
 		position: sticky;
 		top: 0;
-		z-index: 1;
+		z-index: 99;
 		backdrop-filter: blur(8px) brightness(200%) opacity(90%);
 	}
 
@@ -85,6 +94,10 @@
 
 	.wrapper a {
 		margin-right: 16px;
+	}
+
+	.socials:hover {
+		opacity: 0.8;
 	}
 
 	/* About */
@@ -142,7 +155,6 @@
 		white-space: nowrap;
 		font-weight: 600;
 		font-size: 1rem;
-		filter: brightness(100%);
 	}
 
 	/* Resume link */

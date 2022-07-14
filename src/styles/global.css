@@ -14,9 +14,9 @@
 	--secondary: "Woodland";
 
 	/* colors */
-	--gradient1: #ffc456;
-	--gradient2: #ff4ff0;
-	--gradient3: #70e2ff;
+	--gradient1: #ffe3b0;
+	--gradient2: #ff71f3;
+	--gradient3: #a1ecff;
 	--border: rgb(70, 77, 83);
 	--icon-default: #a0a0a0;
 	--bg-darkmode: #0b0b0b;
@@ -24,11 +24,6 @@
 	--text-darkmode: rgb(246, 246, 246);
 	--text-lightmode: rgb(24, 24, 24);
 	--text-highlight: #f1c40f;
-
-	--github: #fafafa;
-	--instagram: #c13584;
-	--twitter: #1da1f2;
-	--linkedin: #0077b5;
 
 	/* scrollbar for Firefox */
 	scrollbar-color: rgb(34, 34, 34) var(--background);

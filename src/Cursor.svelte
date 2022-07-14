@@ -49,7 +49,7 @@
 		pointer-events: none;
 		transition: all 0.125s ease-in;
 		transition-property: background, transform;
-		z-index: 2;
+		z-index: 100;
 	}
 
 	.active-click {

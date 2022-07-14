@@ -1,5 +1,5 @@
 <script>
-	export let name, desc;
+	export let name, link;
 
 	// const subtitle = document.getElementsByClassName("card-subtitle")[0];
 
@@ -20,19 +20,21 @@
 </script>
 
 <div class="card">
-	<div class="card-content">
-		<h3 class="card-title">{name}</h3>
-		<h4 class="card-subtitle"><slot /></h4>
-	</div>
+	<a href={link} target="_blank">
+		<div class="card-content">
+			<h3 class="card-title">{name}</h3>
+			<h4 class="card-subtitle"><slot /></h4>
+		</div>
+	</a>
 </div>
 
 <style>
 	.card {
-		aspect-ratio: 1 / 1;
+		aspect-ratio: 1.6 / 1;
 		border: 0.2vmin solid white;
 		cursor: pointer;
 		position: relative;
-		width: 30vmin;
+		width: 30%;
 	}
 
 	.card:hover:before {
@@ -67,7 +69,7 @@
 		top: 0px;
 		transition: all 350ms ease;
 		width: 100%;
-		z-index: 1;
+		filter: brightness(0.9);
 	}
 
 	.card-content {
@@ -82,7 +84,6 @@
 		position: relative;
 		transition: background-position 350ms ease;
 		width: calc(100% - 6vmin);
-		z-index: 2;
 	}
 
 	.card-title,
@@ -94,11 +95,13 @@
 	}
 
 	.card-title {
-		font-size: 3vmin;
+		font-size: 2.4vmin;
+		font-weight: 600;
 	}
 
 	.card-subtitle {
-		font-size: 1rem;
+		font-size: 0.9rem;
+		font-weight: 400;
 		margin-top: 1vmin;
 	}
 
