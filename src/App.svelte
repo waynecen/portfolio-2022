@@ -1,6 +1,5 @@
 <script>
 	import Cursor from "./Cursor.svelte";
-	import ThemeToggle from "./components/ThemeToggle.svelte";
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
 </script>
@@ -26,7 +25,6 @@
 			<a class="socials" href="https://github.com/waynecen" target="_blank"
 				><img src="/img/icon-github.png" width="20px" alt="icon for GitHub" /></a
 			>
-			<ThemeToggle />
 		</div>
 	</nav>
 	<section class="about">
