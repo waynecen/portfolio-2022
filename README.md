@@ -11,6 +11,4 @@
 - [ ] Create a dedicated resume page
 - [ ] Error handling
 - [ ] Add icon links for project cards (link to new tab/to repository)
-- [ ] Add lightmode toggle
 - [ ] Expand cursor on element hover
-- [ ] Update darkmode toggle to SVG

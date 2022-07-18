@@ -2,30 +2,13 @@
 	import Cursor from "./Cursor.svelte";
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
+	import Footer from "./components/Footer.svelte";
 </script>
 
 <Cursor />
 <main>
 	<nav>
 		<a href="/"><img src="img/favicon.ico" class="logo" alt="Logo icon" /></a>
-		<div class="wrapper">
-			<a class="socials" href="https://medium.com/@wayne.cen" target="_blank"
-				><img src="img/icon-medium.png" width="24px" alt="icon for Medium" /></a
-			>
-			<a
-				class="socials"
-				href="https://www.linkedin.com/in/waynercen/"
-				target="_blank"
-				><img
-					src="/img/icon-linkedin.png"
-					width="20px"
-					alt="icon for LinkedIn"
-				/></a
-			>
-			<a class="socials" href="https://github.com/waynecen" target="_blank"
-				><img src="/img/icon-github.png" width="20px" alt="icon for GitHub" /></a
-			>
-		</div>
 	</nav>
 	<section class="about">
 		<h1 class="header">
@@ -67,15 +50,7 @@
 		>
 	</section>
 	<Divider />
-	<section>
-		<footer>
-			<p class="contact">
-				If you'd like to chat, feel free to send me an email at <span class="email">
-					<a href="mailto:wayne.cen@gmail.com"> wayne.cen@gmail.com </a>
-				</span>
-			</p>
-		</footer>
-	</section>
+	<Footer />
 </main>
 
 <style>
@@ -116,25 +91,6 @@
 		transform: scale(1.15) rotate3d(1, 1, 1, 360deg);
 	}
 
-	.wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-self: flex-end;
-		margin-right: 10%;
-	}
-
-	.wrapper a {
-		margin-right: 16px;
-	}
-
-	.socials {
-		opacity: 0.5;
-	}
-
-	.socials:hover {
-		opacity: 1;
-	}
-
 	/* About */
 	.about {
 		margin-top: 10vmin;
@@ -146,7 +102,7 @@
 		font-family: var(--primary);
 	}
 
-	section {
+	:global(section) {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -209,7 +165,7 @@
 	.header--projects {
 		margin-left: 10%;
 		margin-bottom: 16px;
-		color: rgba(255, 255, 255, 0.4);
+		color: var(--fifty-grey);
 		font-weight: 600;
 		font-size: 1rem;
 	}
@@ -218,25 +174,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	/* Footer */
-	footer {
-		font-size: 0.9rem;
-		font-weight: 400;
-	}
-
-	.contact {
-		color: #a7a7a7;
-	}
-
-	.email {
-		font-weight: 600;
-		transition: opacity 0.225s ease-out;
-	}
-
-	.email:hover {
-		opacity: 0.8;
 	}
 
 	@keyframes handwave {

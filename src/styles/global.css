@@ -18,12 +18,12 @@
 	--gradient2: #ff71f3;
 	--gradient3: #a1ecff;
 	--border: rgb(70, 77, 83);
+	--fifty-grey: #a7a7a7;
 	--icon-default: #a0a0a0;
 	--bg-darkmode: #0b0b0b;
 	--bg-lightmode: #fafafa;
 	--text-darkmode: rgb(246, 246, 246);
 	--text-lightmode: rgb(24, 24, 24);
-	--text-highlight: #f1c40f;
 
 	/* scrollbar for Firefox */
 	scrollbar-color: rgb(34, 34, 34) var(--background);
