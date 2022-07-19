@@ -3,9 +3,11 @@
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
 	import Footer from "./components/Footer.svelte";
+	import Canvas from "./components/Canvas.svelte";
 </script>
 
 <Cursor />
+<Canvas />
 <main>
 	<nav>
 		<a href="/"><img src="img/favicon.ico" class="logo" alt="Logo icon" /></a>
