@@ -1,13 +1,13 @@
 <script>
-	const links = document.querySelectorAll("a");
-	links.forEach((link) => {
-		link.addEventListener("mouseleave", () => {
-			mouseCursor.classList.remove("link-hover");
-		});
-		link.addEventListener("mouseenter", () => {
-			mouseCursor.classList.add("link-hover");
-		});
-	});
+	// const links = document.querySelectorAll("a");
+	// links.forEach((link) => {
+	// 	link.addEventListener("mouseleave", () => {
+	// 		mouseCursor.classList.remove("link-hover");
+	// 	});
+	// 	link.addEventListener("mouseenter", () => {
+	// 		mouseCursor.classList.add("link-hover");
+	// 	});
+	// });
 
 	let m = { x: 0, y: 0 };
 	let mouseCursor;
@@ -34,34 +34,37 @@
 	on:mousedown={handleMousedown}
 	on:mouseup={handleMouseup} />
 
-<div bind:this={mouseCursor} class="innerdot" class:active-click={clicked} />
+<div bind:this={mouseCursor} class="innerdot" class:active={clicked} />
 
 <style>
 	.innerdot {
 		opacity: 1;
-		width: 16px;
-		height: 16px;
-		background: #fff;
+		width: 13px;
+		height: 13px;
+		background: var(--bg-lightmode);
 		border-radius: 50%;
 		position: fixed;
-		transform-origin: 70% 70%;
+		transform-origin: 50% 50%;
 		transform: translate(-50%, -50%);
 		pointer-events: none;
-		transition: all 0.125s ease-in;
-		transition-property: background, transform;
+		transition: 0.1s cubic-bezier(0, 0.39, 0.7, 1);
+		transition-property: width, height;
 		z-index: 100;
+		cursor: default;
 	}
 
-	.active-click {
-		width: 10px;
-		height: 10px;
+	.active {
+		width: 8px;
+		height: 8px;
+		transition: all 0.1s ease-out;
+		transition-duration: 0.1s;
 	}
 
-	.link-hover {
+	/* .link-hover {
 		opacity: 1;
 		background: rgba(26, 26, 26, 0.4);
 		transform: scale(3);
 		transition: all 0.095s ease-in-out;
 		transition-property: background, transform;
-	}
+	} */
 </style>

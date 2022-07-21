@@ -7,7 +7,6 @@
 </script>
 
 <Cursor />
-<Canvas />
 <main>
 	<nav>
 		<a href="/"><img src="img/favicon.ico" class="logo" alt="Logo icon" /></a>
