@@ -3,6 +3,7 @@
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
 	import Footer from "./components/Footer.svelte";
+	import Canvas from "./components/Canvas.svelte";
 </script>
 
 <Cursor />
@@ -38,8 +39,7 @@
 			><p slot="description">
 				A game of rolling dice quickly until you hold ten dice of equal value
 			</p>
-			<p>Built with React</p></Project
-		>
+		</Project>
 		<Project name="The Weather" link="https://the-weather-six.vercel.app/"
 			><p slot="description">
 				Search the weekly weather forecast for any location
@@ -144,6 +144,7 @@
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		background-clip: text;
 		background-size: 200%;
 		white-space: nowrap;
 		font-weight: 700;
@@ -152,6 +153,7 @@
 
 	/* Resume link */
 	.shift-right {
+		font-weight: 600;
 		width: fit-content;
 		transition: all 0.225s ease-out;
 	}
