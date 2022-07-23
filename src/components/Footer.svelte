@@ -45,6 +45,7 @@
 
 	.socials {
 		opacity: 0.6;
+		height: fit-content;
 	}
 
 	.socials:hover {
@@ -69,7 +70,7 @@
 	}
 
 	.wrapper a {
-		padding: 4px;
-		margin-left: 16px;
+		padding: 8px;
+		margin-left: 8px;
 	}
 </style>

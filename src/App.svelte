@@ -155,12 +155,12 @@
 	.shift-right {
 		font-weight: 600;
 		width: fit-content;
+		opacity: 1;
 		transition: all 0.225s ease-out;
 	}
 
 	.shift-right:hover {
 		transform: translate(4px);
-		opacity: 0.7;
 	}
 
 	/* Projects */
