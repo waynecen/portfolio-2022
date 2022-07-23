@@ -73,4 +73,18 @@
 		padding: 8px;
 		margin-left: 8px;
 	}
+
+	@media screen and (max-width: 720px) {
+		footer {
+			margin-bottom: 32px;
+		}
+
+		.contact {
+			display: none;
+		}
+
+		.email {
+			font-size: 1rem;
+		}
+	}
 </style>

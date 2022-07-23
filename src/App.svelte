@@ -57,11 +57,11 @@
 	:global(body) {
 		background-color: var(--bg-darkmode);
 		color: var(--text-darkmode);
-		transition: background-color 0.3s;
 	}
-	:global(body.dark-mode) {
-		background-color: var(--bg-lightmode);
-		color: var(--text-lightmode);
+
+	:global(section) {
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 
 	/* Navigation */
@@ -100,11 +100,6 @@
 		display: flex;
 		flex-direction: column;
 		font-family: var(--primary);
-	}
-
-	:global(section) {
-		margin-left: 10%;
-		margin-right: 10%;
 	}
 
 	.header {
@@ -196,5 +191,11 @@
 
 	.emoji--handwave:hover {
 		animation: handwave 0.4s linear infinite;
+	}
+
+	@media screen and (max-width: 720px) {
+		.projects {
+			flex-direction: column;
+		}
 	}
 </style>

@@ -1,22 +1,5 @@
 <script>
 	export let name, link;
-
-	// const subtitle = document.getElementsByClassName("card-subtitle")[0];
-
-	// const createWord = (text, index) => {
-	// 	const word = document.createElement("span");
-
-	// 	word.innerHTML = `${text}`;
-	// 	word.classList.add("card-subtitle-word");
-	// 	word.style.transitionDelay = `${index * 40}ms`;
-
-	// 	return word;
-	// };
-
-	// const addWord = (text, index) => subtitle.appendChild(createWord(text, index));
-
-	// const createSubtitle = (text) => text.split(" ").map(addWord);
-	// // createSubtitle('Project description goes here');
 </script>
 
 <div class="card">
@@ -33,7 +16,7 @@
 	.card {
 		aspect-ratio: 1.6 / 1;
 		border: 0.2vmin solid white;
-		cursor: pointer;
+		cursor: none;
 		position: relative;
 		width: 30%;
 	}
@@ -45,12 +28,6 @@
 
 	.card:hover > .card-content {
 		background-position: -10% 0%;
-	}
-
-	.card:hover > .card-content > .card-subtitle > .card-subtitle-word {
-		opacity: 1;
-		transform: translateY(0%);
-		transition: opacity 0ms, transform 200ms cubic-bezier(0.9, 0.06, 0.15, 0.9);
 	}
 
 	.card:before {
@@ -114,5 +91,12 @@
 		position: relative;
 		transform: translateY(40%);
 		transition: none;
+	}
+
+	@media screen and (max-width: 720px) {
+		.card {
+			width: 100%;
+			margin-bottom: 32px;
+		}
 	}
 </style>

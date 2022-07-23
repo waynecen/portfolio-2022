@@ -70,7 +70,7 @@
 
 	.link-hover {
 		opacity: 0.5;
-		transform: scale(2);
+		transform: scale(2.5);
 		transition: 0.1s cubic-bezier(0, 0.39, 0.7, 1);
 		transition-property: transform;
 	}

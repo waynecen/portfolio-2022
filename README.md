@@ -4,11 +4,11 @@
 
 ## :construction: To-do/Bug fixing
 - [x] Add link to PDF Resume
-- [ ] Make mobile responsive
+- [x] Make mobile responsive
 - [ ] Implement something with ThreeJS
 - [ ] Tooltips for Social Links
 - [ ] Theme based on time of day
 - [ ] Create a dedicated resume page
 - [ ] Error handling
 - [ ] Add icon links for project cards (link to new tab/to repository)
-- [ ] Expand cursor on element hover
+- [x] Expand cursor on element hover
