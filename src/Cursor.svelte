@@ -57,7 +57,7 @@
 		transform: translate(-50%, -50%);
 		transform-origin: 75% 75%;
 		transition: background 0.1s cubic-bezier(0, 0.39, 0.7, 1);
-		transition-property: transform;
+		transition-property: width, height, transform;
 		transition-duration: 0.125s;
 		z-index: 100;
 	}
@@ -65,7 +65,7 @@
 	.active {
 		width: 8px;
 		height: 8px;
-		transition: all 0.07s ease-out;
+		transition: all 0.1s ease-out;
 	}
 
 	.link-hover {
