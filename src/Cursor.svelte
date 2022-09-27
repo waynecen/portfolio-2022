@@ -74,4 +74,10 @@
 		transition: 0.1s cubic-bezier(0, 0.39, 0.7, 1);
 		transition-property: transform;
 	}
+
+	@media screen and (max-width: 810px) {
+		.innerdot {
+			display: none;
+		}
+	}
 </style>
