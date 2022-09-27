@@ -98,5 +98,9 @@
 			width: 100%;
 			margin-bottom: 32px;
 		}
+
+		.card-title {
+			font-size: 4vmin;
+		}
 	}
 </style>

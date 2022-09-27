@@ -3,7 +3,7 @@
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
 	import Footer from "./components/Footer.svelte";
-	import Canvas from "./components/Canvas.svelte";
+	// import Canvas from "./components/Canvas.svelte";
 </script>
 
 <Cursor />
@@ -21,14 +21,18 @@
 		</h1>
 		<p class="description">
 			I'm a software developer and designer — specializing in designing and
-			building accessible, fun, and <span class="magic">eye-catching</span> things for
-			the web.
+			building accessible, fun, and <span class="magic">eye-catching</span> things
+			for the web. Currently building front-end features on
+			<span class="magicLink"
+				><a href="https://lets-code-chi.vercel.app/" target="_blank">Let's Code</a
+				></span
+			>.
 		</p>
 		<div class="shift-right">
 			<a
 				class="resume"
 				href="https://drive.google.com/file/d/1Xcp28qiHAozYg7DSoIP8xLjTqj0Zzo-E/view?usp=sharing"
-				target="_blank">Resume --></a
+				target="_blank">Resume →</a
 			>
 		</div>
 	</section>
@@ -144,6 +148,16 @@
 		white-space: nowrap;
 		font-weight: 700;
 		font-size: 1rem;
+	}
+
+	.magicLink a {
+		font-family: var(--primary);
+		font-weight: 600;
+		color: white;
+	}
+
+	.magicLink a:hover {
+		color: hsl(44, 100%, 50%);
 	}
 
 	/* Resume link */
