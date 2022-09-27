@@ -22,7 +22,7 @@
 		<p class="description">
 			I'm a software developer and designer — specializing in designing and
 			building accessible, fun, and <span class="magic">eye-catching</span> things
-			for the web. Currently building front-end features on
+			for the web. <br /><br />Currently building front-end features on
 			<span class="magicLink"
 				><a href="https://lets-code-chi.vercel.app/" target="_blank">Let's Code</a
 				></span
@@ -80,6 +80,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 99;
+		-webkit-backdrop-filter: blur(8px) brightness(200%) opacity(90%);
 		backdrop-filter: blur(8px) brightness(200%) opacity(90%);
 	}
 
