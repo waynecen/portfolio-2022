@@ -14,16 +14,17 @@
 	--secondary: "Woodland";
 
 	/* colors */
-	--gradient1: #ffe3b0;
-	--gradient2: #ff71f3;
-	--gradient3: #a1ecff;
-	--border: rgb(70, 77, 83);
-	--fifty-grey: #a7a7a7;
-	--icon-default: #a0a0a0;
-	--bg-darkmode: #0b0b0b;
-	--bg-lightmode: #fafafa;
-	--text-darkmode: rgb(246, 246, 246);
-	--text-lightmode: rgb(24, 24, 24);
+	--gradient1: hsl(39, 100%, 85%);
+	--gradient2: hsl(305, 100%, 72%);
+	--gradient3: hsl(192, 100%, 82%);
+	--border: hsl(208, 8%, 30%);
+	--fifty-grey: hsl(0, 0%, 65%);
+	--icon-default: hsl(0, 0%, 63%);
+	--bg-darkmode: hsl(0, 0%, 4%);
+	--bg-lightmode: rgba(250, 250, 250, 100%);
+	--cursor-bg: rgba(250, 250, 250, 0.2);
+	--text-darkmode: hsl(0, 0%, 96%);
+	--text-lightmode: hsl(0, 0%, 9%);
 
 	/* scrollbar for Firefox */
 	scrollbar-color: rgb(34, 34, 34) var(--background);

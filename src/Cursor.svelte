@@ -69,8 +69,10 @@
 	}
 
 	.link-hover {
-		opacity: 0.5;
+		border: 1px rgba(250, 250, 250, 0.5) solid;
+		background: var(--cursor-bg);
 		transform: scale(2.5);
+		
 		transition: 0.1s cubic-bezier(0, 0.39, 0.7, 1);
 		transition-property: transform;
 	}

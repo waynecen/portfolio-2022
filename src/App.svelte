@@ -3,7 +3,6 @@
 	import Divider from "./components/Divider.svelte";
 	import Project from "./components/Project.svelte";
 	import Footer from "./components/Footer.svelte";
-	// import Canvas from "./components/Canvas.svelte";
 </script>
 
 <Cursor />
@@ -22,7 +21,7 @@
 		<p class="description">
 			I'm a software developer and designer — specializing in designing and
 			building accessible, fun, and <span class="magic">eye-catching</span> things
-			for the web. <br /><br />Currently building front-end features on
+			for the web. <br /><br />Currently building features on
 			<span class="magicLink"
 				><a href="https://lets-code-chi.vercel.app/" target="_blank">Let's Code</a
 				></span
