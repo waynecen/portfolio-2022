@@ -8,4 +8,10 @@
 		font-size: 1rem;
 		font-weight: 600;
 	}
+	
+	@media screen and (max-width: 720px) {
+		.subHeader {
+			--sidePadding: 6%;
+		}
+	}
 </style>

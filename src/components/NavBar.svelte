@@ -52,4 +52,10 @@
 		color: var(--divider);
 		font-weight: 600;
 	}
+
+	@media screen and (max-width: 720px) {
+		nav {
+			--sidePadding: 6%;
+		}
+	}
 </style>

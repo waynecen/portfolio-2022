@@ -104,4 +104,11 @@
 			background-position: -200% center;
 		}
 	}
+
+	/* Mobile */
+	@media screen and (max-width: 720px) {
+		section {
+			--sidePadding: 6%;
+		}
+	}
 </style>
