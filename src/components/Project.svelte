@@ -1,13 +1,15 @@
 <script>
-	export let name, link;
+	export let name, link, token;
 </script>
 
 <div class="card">
 	<a href={link} target="_blank">
 		<div class="card-content">
-			<h3 class="card-title">{name}</h3>
-			<h4 class="card-subtitle"><slot name="description" /></h4>
-			<slot name="tech-stack" />
+			<div class="wrapper">
+				<h3 class="card-title">{name}</h3>
+				<h4 class="card-subtitle"><slot></slot></h4>
+			</div>
+			<div class="token">{token}</div>
 		</div>
 	</a>
 </div>
@@ -15,19 +17,16 @@
 <style>
 	.card {
 		aspect-ratio: 1.6 / 1;
-		border: 0.2vmin solid white;
+		border: 0.2vmin solid var(--border);
 		cursor: none;
 		position: relative;
-		width: 30%;
+		width: var(--cardSize);
+		border-radius: 4px;
 	}
 
 	.card:hover:before {
 		background-position: 100% 100%;
 		transform: scale(1.08, 1.08);
-	}
-
-	.card:hover > .card-content {
-		background-position: -10% 0%;
 	}
 
 	.card:before {
@@ -48,6 +47,7 @@
 		transition: all 350ms ease;
 		width: 100%;
 		filter: brightness(0.9);
+		border-radius: 2px;
 	}
 
 	.card-content {
@@ -62,12 +62,14 @@
 		position: relative;
 		transition: background-position 350ms ease;
 		width: calc(100% - 5vmin);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.card-title,
 	.card-subtitle {
 		color: white;
-		font-family: var(--primary);
 		font-weight: 400;
 		margin: 0px;
 	}
@@ -78,19 +80,20 @@
 	}
 
 	.card-subtitle {
+		font-family: var(--primary);
 		font-size: 0.9rem;
 		font-weight: 400;
 		margin-top: 1vmin;
 		margin-bottom: 0vmin;
 	}
 
-	.card-subtitle-word {
-		display: inline-block;
-		margin: 0vmin 0.3vmin;
-		opacity: 0;
-		position: relative;
-		transform: translateY(40%);
-		transition: none;
+	.token {
+		padding: 8px 16px;
+		background-color:rgba(255, 255, 255, 0.2);
+		border-radius: 12px;
+		width: fit-content;
+		font-size: 0.9rem;
+		font-weight: 600;
 	}
 
 	@media screen and (max-width: 720px) {

@@ -1,102 +1,73 @@
 <script>
-	import Cursor from "./Cursor.svelte";
+	import About from "./components/About.svelte";
 	import Divider from "./components/Divider.svelte";
-	import Project from "./components/Project.svelte";
 	import Footer from "./components/Footer.svelte";
+	import NavBar from "./components/NavBar.svelte";
+	import Project from "./components/Project.svelte";
+	import Subheader from "./components/Subheader.svelte";
+	import Cursor from "./Cursor.svelte";
 </script>
 
-<Cursor />
 <main>
-	<nav>
-		<a href="/"><img src="img/favicon.ico" class="logo" alt="Logo icon" /></a>
-	</nav>
-	<section class="about">
+	<Cursor />
+	<NavBar/>
+	<section class="overview">
 		<h1 class="header">
-			Hey, I'm Wayne <img
+			I'm Wayne Cen <img
 				src="/img/hand-wave-emoji.png"
 				class="emoji--handwave"
 				alt="Hand wave emoji"
 			/>
 		</h1>
 		<p class="description">
-			I'm a software developer and designer — specializing in designing and
-			building accessible, fun, and <span class="magic">eye-catching</span> things
+			Software developer and designer — specializing in designing and
+			building accessible, fun, and <span class="magic">visually appealing</span> things
 			for the web. <br /><br />Currently building features on
 			<span class="magicLink"
 				><a href="https://lets-code-chi.vercel.app/" target="_blank">Let's Code</a
 				></span
 			>.
 		</p>
-		<div class="shift-right">
-			<a
-				class="resume"
-				href="https://drive.google.com/file/d/1Xcp28qiHAozYg7DSoIP8xLjTqj0Zzo-E/view?usp=sharing"
-				target="_blank">Resume →</a
-			>
-		</div>
 	</section>
 	<Divider />
-	<h2 class="header--projects">Selected Work</h2>
+	<Subheader>Selected Work</Subheader>
 	<section class="projects">
 		<Project name="Tenzi" link="https://tenzi-game.vercel.app/"
-			><p slot="description">
+		token="React"
+			><p>
 				A game of rolling dice quickly until you hold ten dice of equal value
 			</p>
 		</Project>
-		<Project name="The Weather" link="https://the-weather-six.vercel.app/"
-			><p slot="description">
+		<Project name="Quizzical" link="https://quizzical-ten.vercel.app/" token="React"
+			><p>Multiple choice trivia game</p></Project
+		>
+		<Project name="The Weather"
+		link="https://the-weather-six.vercel.app/" token="HTML, CSS, JS"
+			><p>
 				Search the weekly weather forecast for any location
 			</p>
 		</Project>
-		<Project name="Quizzical" link="https://quizzical-ten.vercel.app/"
-			><p slot="description">Multiple choice trivia game</p></Project
-		>
 	</section>
 	<Divider />
+	<Subheader>About Me</Subheader>
+	<About/>
+	<Divider />
 	<Footer />
+	<Divider />
 </main>
 
 <style>
 	:global(body) {
-		background-color: var(--bg-darkmode);
-		color: var(--text-darkmode);
+		background-color: var(--bg-dark);
+		color: var(--text-offwhite);
 	}
 
 	:global(section) {
-		margin-left: 10%;
-		margin-right: 10%;
+		margin: 0 var(--sidePadding);
 	}
 
-	/* Navigation */
-	nav {
-		display: flex;
-		justify-content: space-between;
-		background: rgba(0, 0, 0, 0.5);
-		padding-top: 16px;
-		padding-left: 10%;
-		padding-bottom: 16px;
-		font-size: 0.9rem;
-		position: sticky;
-		top: 0;
-		z-index: 99;
-		-webkit-backdrop-filter: blur(8px) brightness(200%) opacity(90%);
-		backdrop-filter: blur(8px) brightness(200%) opacity(90%);
-	}
-
-	.logo {
-		display: flex;
-		width: 20px;
-		height: 20px;
-		align-self: left;
-		transition: transform 0.225s ease-in-out;
-	}
-
-	.logo:hover {
-		transform: scale(1.15) rotate3d(1, 1, 1, 360deg);
-	}
-
-	/* About */
-	.about {
+	/* Util */
+	.overview {
 		margin-top: 10vmin;
 	}
 
@@ -107,6 +78,7 @@
 	}
 
 	.header {
+		font-family: var(--primary);
 		font-size: 1.6rem;
 		font-weight: 600;
 		margin-bottom: 8px;
@@ -115,10 +87,17 @@
 	.description {
 		font-size: 1rem;
 		font-weight: 400;
-		max-width: 520px;
+		max-width: var(--paragraph-length);
 		line-height: 1.5rem;
 		margin-bottom: 20px;
-		color: #a7a7a7;
+		color: var(--grey);
+	}
+
+	/* Projects */
+	.projects {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	/* accent text */
@@ -157,36 +136,10 @@
 	}
 
 	.magicLink a:hover {
-		color: hsl(44, 100%, 50%);
+		color: var(--linkHover);
 	}
 
-	/* Resume link */
-	.shift-right {
-		font-weight: 600;
-		width: fit-content;
-		opacity: 1;
-		transition: all 0.225s ease-out;
-	}
-
-	.shift-right:hover {
-		transform: translate(4px);
-	}
-
-	/* Projects */
-	.header--projects {
-		margin-left: 10%;
-		margin-bottom: 16px;
-		color: var(--fifty-grey);
-		font-weight: 600;
-		font-size: 1rem;
-	}
-
-	.projects {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+	/* CSS Animations */
 	@keyframes handwave {
 		from {
 			transform: rotate(0deg);
@@ -198,6 +151,7 @@
 			transform: rotate(0deg);
 		}
 	}
+
 	.emoji--handwave {
 		width: 24px;
 		transition: transform 0.3s ease-out;
@@ -207,6 +161,7 @@
 		animation: handwave 0.4s linear infinite;
 	}
 
+	/* Mobile */
 	@media screen and (max-width: 720px) {
 		.projects {
 			flex-direction: column;

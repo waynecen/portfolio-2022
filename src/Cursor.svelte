@@ -50,7 +50,7 @@
 		opacity: 1;
 		width: 13px;
 		height: 13px;
-		background: var(--bg-lightmode);
+		background: var(--cursor-color);
 		border-radius: 50%;
 		position: fixed;
 		pointer-events: none;
@@ -59,7 +59,7 @@
 		transition: background 0.1s cubic-bezier(0, 0.39, 0.7, 1);
 		transition-property: width, height, transform;
 		transition-duration: 0.125s;
-		z-index: 100;
+		z-index: 99;
 	}
 
 	.active {
@@ -70,9 +70,8 @@
 
 	.link-hover {
 		border: 1px rgba(250, 250, 250, 0.5) solid;
-		background: var(--cursor-bg);
+		background: var(--cursor-hover);
 		transform: scale(2.5);
-		
 		transition: 0.1s cubic-bezier(0, 0.39, 0.7, 1);
 		transition-property: transform;
 	}

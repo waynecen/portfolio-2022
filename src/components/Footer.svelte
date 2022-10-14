@@ -1,9 +1,9 @@
 <section>
 	<footer>
 		<p class="contact">
-			If you'd like to chat, shoot me an email
+			Let's work together
 			<span class="email">
-				<a href="mailto:wayne.cen@gmail.com"> wayne.cen@gmail.com </a>
+				<a href="mailto:wayne.cen@gmail.com" class="email"> wayne.cen@gmail.com </a>
 			</span>
 		</p>
 		<div class="wrapper">
@@ -40,7 +40,7 @@
 	}
 
 	.contact {
-		color: var(--fifty-grey);
+		color: var(--grey);
 	}
 
 	.socials {
@@ -50,6 +50,7 @@
 
 	.socials:hover {
 		opacity: 1;
+		color: var(--linkHover);
 	}
 
 	.email {
@@ -57,11 +58,12 @@
 		flex-direction: column;
 		font-size: 1.2rem;
 		font-weight: 600;
-		transition: opacity 0.225s ease-out;
+		transition: color 0.225s ease-out;
+		color: white;
 	}
 
-	.email:hover {
-		opacity: 0.8;
+	.email a:hover {
+		color: var(--linkHover);
 	}
 
 	.wrapper {
