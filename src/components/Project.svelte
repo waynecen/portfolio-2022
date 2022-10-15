@@ -75,7 +75,7 @@
 	}
 
 	.card-title {
-		font-size: 2.4vmin;
+		font-size: 2.2vmin;
 		font-weight: 600;
 	}
 
@@ -88,22 +88,37 @@
 	}
 
 	.token {
-		padding: 8px 16px;
+		padding: 1vmin 1.2vmin;
 		background-color:rgba(255, 255, 255, 0.2);
-		border-radius: 12px;
+		border-radius: 1.6vmin;
 		width: fit-content;
-		font-size: 0.9rem;
+		font-size: 1.4vmin;
 		font-weight: 600;
+	}
+
+	@media screen and (max-width: 810px) {
+		.card {
+			aspect-ratio: 1.2 / 1;
+		}
+
+		.card-subtitle {
+			margin-bottom: 8px;
+		}
 	}
 
 	@media screen and (max-width: 720px) {
 		.card {
+			aspect-ratio: 1.6 / 1;
 			width: 100%;
 			margin-bottom: 32px;
 		}
 
 		.card-title {
-			font-size: 4vmin;
+			font-size: 5.6vmin;
+		}
+
+		.token {
+			font-size: 3.2vmin;
 		}
 	}
 </style>

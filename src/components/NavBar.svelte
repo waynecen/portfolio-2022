@@ -8,7 +8,7 @@
 		<a
 			href="https://drive.google.com/file/d/1Xcp28qiHAozYg7DSoIP8xLjTqj0Zzo-E/view?usp=sharing"
 			target="_blank">
-			View Resume
+			Resume
 		</a>
 	</div>
 </nav>
@@ -41,7 +41,7 @@
 	.linkWrapper {
 		display: flex;
 		font-weight: 600;
-		gap: 24px;
+		gap: 16px;
 	}
 
 	.linkWrapper a:hover {
@@ -53,7 +53,7 @@
 		font-weight: 600;
 	}
 
-	@media screen and (max-width: 720px) {
+	@media screen and (max-width: 1440px) {
 		nav {
 			--sidePadding: 6%;
 		}

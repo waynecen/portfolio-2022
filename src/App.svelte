@@ -5,6 +5,7 @@
 	import NavBar from "./components/NavBar.svelte";
 	import Project from "./components/Project.svelte";
 	import Subheader from "./components/Subheader.svelte";
+	import Writing from "./components/Writing.svelte";
 	import Cursor from "./Cursor.svelte";
 </script>
 
@@ -22,11 +23,7 @@
 		<p class="description">
 			Software developer and designer — specializing in designing and
 			building accessible, fun, and <span class="magic">eye-catching</span> things
-			for the web. <br /><br />Currently building features on
-			<span class="magicLink"
-				><a href="https://lets-code-chi.vercel.app/" target="_blank">Let's Code</a
-				></span
-			>.
+			for the web.
 		</p>
 	</section>
 	<Divider />
@@ -51,6 +48,9 @@
 	<Divider />
 	<Subheader>About Me</Subheader>
 	<About/>
+	<Divider />
+	<Subheader>Writing</Subheader>
+	<Writing/>
 	<Divider />
 	<Footer />
 	<Divider />
@@ -129,16 +129,6 @@
 		font-size: 1rem;
 	}
 
-	.magicLink a {
-		font-family: var(--primary);
-		font-weight: 600;
-		color: white;
-	}
-
-	.magicLink a:hover {
-		color: var(--linkHover);
-	}
-
 	/* CSS Animations */
 	@keyframes handwave {
 		from {
@@ -159,6 +149,20 @@
 
 	.emoji--handwave:hover {
 		animation: handwave 0.4s linear infinite;
+	}
+
+	/* Laptop */
+	@media screen and (max-width: 1440px) {
+		section {
+			--sidePadding: 6%;
+		}
+	}
+
+	/* Tablet */
+	@media screen and (max-width: 810px) {
+		.projects {
+			width: 90%;
+		}
 	}
 
 	/* Mobile */

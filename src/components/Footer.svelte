@@ -76,17 +76,19 @@
 		margin-left: 8px;
 	}
 
-	@media screen and (max-width: 720px) {
-		footer {
-			margin-bottom: 32px;
-		}
-
-		.contact {
-			display: none;
+	@media screen and (max-width: 1440px) {
+		section {
+			--sidePadding: 6%;
 		}
 
 		.email {
 			font-size: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		.contact {
+			display: none;
 		}
 	}
 </style>

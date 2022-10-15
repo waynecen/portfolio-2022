@@ -4,60 +4,34 @@
 
 <section id="about">
 	<div class="flex-row">
-		<div class="flex-col">
 			<img src="img/portrait-600.png" class="portrait" alt="Wayne
 			Cen Portrait">
-			<div class="wrapper">
-				<h3 class="subheader">Writing</h3>
-				<a
-				href="https://betterprogramming.pub/lets-code-mubasic-piano-keys-3ac397d3df1d"
-				target="_blank" class="article-link">Let's Code: Piano Keys</a>
-				<a
-				href="https://betterprogramming.pub/lets-code-mubasic-piano-keys-3ac397d3df1d"
-				target="_blank" class="article-link">Learning 3D as a product designer</a>
-			</div>
-		</div>
+
 		<p class="about-me">
 			Graduated with a <AccentText><a
-				href="https://design.ampd.yorku.ca/" target="_blank">Bachelor of Design</a></AccentText> from York University.
-			<br>
-			Focused mainly on <AccentText>UX & UI</AccentText> design, dabbled in coding courses.
-			<br>
-			Fell in love with programming.
-			<br>
-			Spent a year building projects, to learn how to code.
-			<br>
+			href="https://design.ampd.yorku.ca/" target="_blank">Bachelor of
+			Design</a></AccentText> from York University. Focused mainly on
+			<AccentText>UX & UI</AccentText> design, dabbling in coding
+			courses. Fell in love with programming. Spent a year building
+			projects to learn how to code.
 			<AccentText>Passionate</AccentText> about learning, writing, and
-			video games.
+			video games. <AccentText>React</AccentText> and
+			<AccentText>TypeScript</AccentText> are my frameworks of choice.
+			Currently developing demos for my passion project,
+			<AccentText>
+				<a href="https://lets-code-chi.vercel.app/"
+				target="_blank">Let's Code</a></AccentText>, built using <AccentText>Next.js</AccentText>.
 			<br>
-			<AccentText>React</AccentText> and <AccentText>TypeScript</AccentText> are my frameworks of choice.
 			<br>
-			Currently available for <AccentText>front-end developer</AccentText> roles. 
-			<br>
+			Available for <AccentText>front-end developer</AccentText> roles. 
 		</p>
 	</div>
 </section>
 
 <style>
-	a:hover {
-		color: var(--linkHover);
-	}
-
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 32px;
-		width: 32ch;
-	}
-
 	.flex-row {
 		display: flex;
 		gap: 48px;
-	}
-
-	.flex-col {
-		display: flex;
-		flex-direction: column;
 	}
 	
 	.portrait {
@@ -69,24 +43,11 @@
 	.about-me {
 		font-family: var(--primary);
 		font-weight: 600;
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 		color: var(--grey);
 		max-width: var(--paragraph-length);
-		line-height: 3.2rem;
+		line-height: 2.4rem;
 		margin-top: -8px;
-	}
-	
-	.subheader {
-		color: var(--grey);
-		font-size: 1rem;
-		border-bottom: 1px var(--border) solid;
-		margin-top: 32px;
-		padding-bottom: 4px;
-	}
-
-	.article-link {
-		border-bottom: 1px var(--divider) solid;
-		padding: 8px 0px;
 	}
 
 	a:hover {
@@ -105,10 +66,32 @@
 		}
 	}
 
-	/* Mobile */
-	@media screen and (max-width: 720px) {
+	@media screen and (max-width: 1440px) {
 		section {
 			--sidePadding: 6%;
 		}
 	}
+
+	@media screen and (max-width: 810px) {
+		.about-me {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+
+		.portrait {
+			height: 180px;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		.portrait {
+			width: 100%;
+			height: auto;
+		}
+
+		.flex-row {
+			flex-direction: column;
+		}
+	}
+	
 </style>
